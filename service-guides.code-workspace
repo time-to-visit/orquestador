@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "service-guides"
+		},
+		{
+			"path": "service-routes"
+		},
+		{
+			"path": "service-sitios"
+		},
+		{
+			"path": "service-user"
+		},
+		{
+			"path": "../time-to-visit/.git"
+		},
+		{
+			"path": "../time-to-visit"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
