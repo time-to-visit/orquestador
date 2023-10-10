@@ -14,8 +14,11 @@ Revisar cada proyecto internamente, leer readme del proyecto.
 
 ### con orquestador
 
-Iniciar db
 
+#### construir imagen db
+  ` docker compose  docker-compose.yml" up -d --build db ` 
+
+#### Iniciar db
 entrar a la base de datos
 `mysql -u root -p -h 127.0.0.1 -P 3306`
 
@@ -23,29 +26,12 @@ ejecutar los scripts de creacion de base de datos en la carpeta db
 
 *cambiar configuraciones en ccada proyecto y colocal host db
 
+![image](https://github.com/time-to-visit/orquestador/assets/32990133/9a5cb2e6-7eba-48d1-b177-1cbcf0fa2a88)
 
-database:
-  driver: "mysql"
-  dbname: "sites-time-to-visit"
-  username: "root"
-  password: ""
-  host: "db"
-  port: "3306"
-  max_lifetime: 7200
-  max_open_conns: 150
-  max_idle_conns: 50
+#### construir el resto del proyecto
 
-server:
-  port: "3002"
-  secret: "jdnfksdmfksda"
-  #release | debug
-  mode: "release"
-credential:
-  gcbucket: "dasdasd-9053b.appspot.com"
-microservices:
-  auth: http://localhost:3001/verify
+`  docker compose  -f "docker-compose.yml" up -d --build alertmanager caddy cadvisor grafana nodeexporter prometheus pushgateway routes sites users ` 
 
 
-` docker-compose.yml" up -d --build db ` 
 ## Orquestador
  https://github.com/time-to-visit/orquestador
