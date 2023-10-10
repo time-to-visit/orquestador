@@ -22,7 +22,8 @@ entrar a la base de datos
 ejecutar los scripts de creacion de base de datos en la carpeta db
 
 *cambiar configuraciones en ccada proyecto y colocal host db
-`
+
+
 database:
   driver: "mysql"
   dbname: "sites-time-to-visit"
@@ -43,7 +44,7 @@ credential:
   gcbucket: "dasdasd-9053b.appspot.com"
 microservices:
   auth: http://localhost:3001/verify
-`
+
 
 ` docker-compose.yml" up -d --build db ` 
 ## Orquestador
