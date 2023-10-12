@@ -4,6 +4,9 @@
 
 este proyecto se puede ejecutar sin orquestador y con orquestador
 
+### advertencia
+si usted manejo un computador con sistema operativo windwos, lo mas recomendable es correr sin orquestador el proyecto, ya que el wsdl2 suele consumir demasiados recursos, y podria sobrecargar la maquina
+
 ### sin orquestador
 Revisar cada proyecto internamente, leer readme del proyecto.
 
@@ -35,6 +38,9 @@ ejecutar los scripts de creacion de base de datos en la carpeta sql
 
 `  docker compose  -f "docker-compose.yml" up -d --build alertmanager caddy cadvisor grafana nodeexporter prometheus pushgateway routes sites users ` 
 
+si quiere omitir temas de monitoreo y no gastar tantos recursos es:
+
+`  docker compose  -f "docker-compose.yml" up -d --build  routes sites users ` 
 
 ## Orquestador
  https://github.com/time-to-visit/orquestador
