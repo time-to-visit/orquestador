@@ -18,6 +18,9 @@ Revisar cada proyecto internamente, leer readme del proyecto.
 ### con orquestador
 
 
+#### pasos iniciales
+para poder correr el proyecto se debe tener en cuenta que se deben clonar los respositorios del backend en la raiz de este proyecto
+
 #### construir imagen db
   ` docker compose  docker-compose.yml" up -d --build db ` 
 
