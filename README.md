@@ -18,11 +18,14 @@ Revisar cada proyecto internamente, leer readme del proyecto.
 #### construir imagen db
   ` docker compose  docker-compose.yml" up -d --build db ` 
 
+#### abrir bash
+ ` docker exec -it mysql-db bash ` 
+
 #### Iniciar db
 entrar a la base de datos
 `mysql -u root -p -h 127.0.0.1 -P 3306`
 
-ejecutar los scripts de creacion de base de datos en la carpeta db
+ejecutar los scripts de creacion de base de datos en la carpeta sql
 
 *cambiar configuraciones en ccada proyecto y colocal host db
 
